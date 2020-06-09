@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Los Arcos Fisioterapia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81696702-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-81696702-1');
+  </script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/myCookieConsent.css">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <!-- Cookie consent window -->
+    <div id="myCookieConsent">
+        <a id="cookieButton">Entendido</a>
+        <div>Este sitio web utiliza cookies. <a href="./politicadecookies.html" target="_blank">Ver política de cookies.</a></div>
+    </div>
+  
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo"><a href="index.html">Los Arcos Fisioterapia</a>
+		  </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="index.html#inicio-section" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#tecnicas-section" class="nav-link">Técnicas</a></li>
+                <li><a href="index.html#horarios-section" class="nav-link">Horario</a></li>
+                <li><a href="index.html#equipo-section" class="nav-link">Equipo</a></li>
+                <li><a href="index.html#servicios-section" class="nav-link">Servicios</a></li>
+                <li><a href="index.html#tarifas-section" class="nav-link">Tarifas</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block">
+                <li class="cta"><a href="index.html#contacto-section" class="nav-link"><span
+                      class="rounded border border-primary">Contacto</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
+                class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>		
+
+    </header>
+
+
+	  	  
+	  
+    <div class="intro-section" style="background-color: #ccc;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <h1 id="titulo_id" >titulo</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img id="foto_id" src="images/slide_0.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 ml-auto">			  
+            <p id="texto_id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga dolorem error quos sint consequuntur asperiores unde at fugit hic!</p>
+			<p><a href="index.html#tecnicas-section" class="btn btn-primary py-3 px-4">Volver</a></p>         
+		  </div>
+        </div>
+      </div>
+    </div>
+
+	<script>
+		function parse_query_string(query) {
+		  var vars = query.split("&");
+		  var query_string = {};
+		  for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			var key = decodeURIComponent(pair[0]);
+			var value = decodeURIComponent(pair[1]);
+			// If first entry with this name
+			if (typeof query_string[key] === "undefined") {
+			  query_string[key] = decodeURIComponent(value);
+			  // If second entry with this name
+			} else if (typeof query_string[key] === "string") {
+			  var arr = [query_string[key], decodeURIComponent(value)];
+			  query_string[key] = arr;
+			  // If third or later entry with this name
+			} else {
+			  query_string[key].push(decodeURIComponent(value));
+			}
+		  }
+		  return query_string;
+		}		
+
+		var query = window.location.search.substring(1);
+		var qs = parse_query_string(query);	
+		
+		if (qs.tecnica=='fisioterapia'){ 
+			document.getElementById("titulo_id").innerHTML = "Fisioterapia";
+			document.getElementById("foto_id").setAttribute("src","images/Osteo.jpg");
+			document.getElementById("texto_id").innerHTML = "<p>La fisioterapia utiliza enfoques físicos para promover, mantener y restaurar el bienestar físico, psicológico y social (Chartered society of physiotherapy, 2002)</p><p>¿QUE PUEDE HACER LA FISIOTERAPIA POR TI?</p><p> La fisioterapia trata afecciones mediante diferentes terapias manuales (osteopatía, masaje, liberación miofascial…), ejercicio terapéutico (pilates terapéutico, Gimnasia hipopresiva...) y agentes físicos como el calor (diatermia), frío, electroterapia ( TENS, EMS, US…).</p><p>En Los Arcos Fisioterapia tratamos el dolor y la rigidez en articulaciones, músculos, nervios y tejidos blandos.</p><p>El tratamiento es individualizado y utilizamos las técnicas necesarias como: punción seca, diatermia, inducción miofascial, osteopatía.. sin incremento del precio de la sesión.</p><p>LO QUE TRATAMOS:<br><br>Dolores de espalda<br>cervicalgias<br>Lesiones deportivas<br>Tendinitis<br>Trocanteritis<br>Dolores de rodilla<br>Lesiones musculares (roturas fibrilares…)<br>Esguinces<br>Patología de la ATM <br>Cólico del lactante<br>Tortícolis congénita<br>CÓMO LO TRATAMOS<br>Movilización y manipulación<br>Masaje<br>Liberación de tejidos blandos<br>Prescripción de ejercicios<br>Diatermia<br>Punción seca</p><p>HORARIO<br><br>LUNES:10:00 a 15:00 y 16:00 a 21:00<br>MARTES:10:00 a 12:00 y 16:00 a 22:00<br>MIÉRCOLES: 10:00 a 15:00 y 16:00 a 21:00<br>JUEVES: 10:00 a 12:00 y 16:00 a 22:00<br>VIERNES: 10:00 a 13:00 y 16:00 a 20:00</p>";
+		}
+		else if (qs.tecnica=='osteopatia'){
+			document.getElementById("titulo_id").innerHTML = "Osteopatía";
+			document.getElementById("foto_id").setAttribute("src","images/slide_2.jpg");
+			document.getElementById("texto_id").innerHTML = "<p>La Osteopatía desarrollada por Andrew Taylor Still esta basada en la teoría de que muchas enfermedades son debidas a una pérdida de la integridad estructural.</p><p>La Osteopatía se basa en que todos los sistemas del cuerpo trabajan conjuntamente, están relacionados, y por tanto los trastornos en un sistema pueden afectar el funcionamiento de los otros. Es por tanto una práctica de tipo holistico El todo es mayor que la suma de sus partes. </p><p>El tratamiento, que se denomina manipulación osteopática, consiste en un sistema de técnicas prácticas orientadas a aliviar el dolor, restaurar funciones y promover la salud y el bienestar.</p><p>Según sus principios, por medio de la manipulación del sistema músculo-esquelético, se pueden curar las afecciones de órganos vitales o enfermedades ya que esta manipulación ayudaría a revitalizar el riego sanguíneo o devolver el grado de movilidad normal a la articulación dañada y por tanto a la curación del paciente.<p/><p>El tratamiento depende de una evaluación corporal completa, del tipo de lesión y del paciente. Ningún tratamiento es igual a otro y se debe seguir siempre un enfoque personal único.";
+		}
+		else if (qs.tecnica=='gah'){
+			document.getElementById("titulo_id").innerHTML = "GAH";
+			document.getElementById("foto_id").setAttribute("src","images/slide_2.jpg");
+      document.getElementById("texto_id").innerHTML = "<p>La GAH es una técnica que se realiza adoptando diferentes posturas a la vez que contraemos el diafragma mediante una apnea espiratoria. Con esto conseguimos una disminución de la tensión en la pared abdominal por el efecto de succión de los órganos pélvicos, además de una contracción refleja de la musculatura del suelo pélvico y la faja abdominal.</p><p>Está indicado para problemas de incontinencia urinaria, recuperación del suelo pélvico en postparto y mejora en la actividad digestiva.</p><p>Horario de grupos: viernes a 17:30 y 18:15.</p><p>La duración de la clase es de 30 minutos y los grupos son de 4 personas máximo.</p><p>Se deberá realizar una primera clase individual de 30 minutos.</p><p><a href='http://www.metodohipopresivo.com/' target='_blank'>Saber más acerca del método hipopresivo.</a></p><p><a href='https://caufriezconcept.com/profile/anaperezmedina/' target='_blank'>Perfil del terapeuta titulado.</a></p>";
+		}
+		else if (qs.tecnica=='pilatesclinico'){
+			document.getElementById("titulo_id").innerHTML = "Plates Terapéutico";
+			document.getElementById("foto_id").setAttribute("src","images/slide_2.jpg");
+			document.getElementById("texto_id").innerHTML = "<p>La realización regular de los ejercicios de suelo del método Pilates nos aporta diversos beneficios tanto a nivel psíquico como físico.</p><p>Uno de los beneficios más importantes es el desarrollo del control muscular sobre nuestra columna vertebral potenciando la estabilidad sobre la pelvis y el tronco, muy beneficiosos ambos para la prevención y mejoría de las lesiones de columna.</p><p>El fortalecimiento de dichas zonas nos ayudará a generar un equilibrio muscular que, basándonos en el control cuerpo-mente, nos ayudará a alcanzar un bienestar general.</p><p>Otro de los beneficios del método Pilates es la forma que tiene de enfocar los ejercicios, que basándose a su vez en el control postural y la respiración, nos ayudará a realizar en todo momento un ejercicio consciente que fomenta el uso de todos los músculos de nuestro cuerpo.</p><p>Los grupos son reducidos (máximo cinco personas) y dirigidos por un fisioterapeuta para una correcta realización de los ejercicios.</p><p> Los grupos son de 2 h/semana y 1h/ semana.</p><p>No hay pago por matrícula.</p><p>Se adapta el ejercicio a cada persona según sus capacidades.</p><p>También hay posibilidad de Pilates individual y pilates para embarazadas (consultar precios).</p><p>HORARIOS PILATES TERAPÉUTICO:<br>Lunes y miércoles: 10:00,11:00, 14:00, 18:00, 19:00 y 20:00<br>Martes y jueves: 10:00, 11:00, 7:00, 18:00, 19:00, 20:00 y 21:00<br>Viernes: 19:00</p>";
+		}
+		else if (qs.tecnica=='miofascial'){
+			document.getElementById("titulo_id").innerHTML = "Induccón Miofascial";
+			document.getElementById("foto_id").setAttribute("src","images/slide_2.jpg");
+			document.getElementById("texto_id").innerHTML = "<p>La fascia es la forma del tejido conjuntivo que rodea todos los órganos en forma tridimensional permitiendo mantenerlos en su correcta posición y funcionamiento. Cada músculo y cada una de sus fibras y haces están rodeados por la fascia. El recorrido de la fascia es continuo, por esta razón, cualquier cambio estructural de la fascia en una determinada parte del cuerpo producirá restricciones en las partes distales.</p><p>Se considera que la Inducción Miofascial es la pieza olvidada en la cadena de los tratamientos efectuados por los terapeutas encargados en la restauración de la función y alivio del dolor.</p><p>La Inducción Miofascial es un método de evaluación y de tratamiento tridimensional de los movimientos y presiones sostenidas en todo el sistema fascial para así eliminar sus restricciones y equilibrar la alterada función corporal. La aplicación de las técnicas se puede definir como una combinación de presiones sostenidas, posicionamientos específicos y muy suaves estiramientos.</p><p>Las técnicas de la Inducción Miofascial forman parte de la gran familia de las Terapias Manuales. Por esta razón varios de los principios incluidos en las bases para la aplicación de las técnicas manuales, siguen vigentes también dentro de los aplicados en la Inducción Miofascial</p>";
+		}
+		else if (qs.tecnica=='uroginecologica'){
+			document.getElementById("titulo_id").innerHTML = "Fisioterapia Uroginecológica";
+			document.getElementById("foto_id").setAttribute("src","images/slide_2.jpg");
+			document.getElementById("texto_id").innerHTML = "Es una disciplina terapéutica que mejora, trata y previene diferentes alteraciones del suelo pélvico como incontinencia urinaria.";
+		}
+		else if (qs.tecnica=='electroterapia'){
+			document.getElementById("titulo_id").innerHTML = "Electroterapia";
+			document.getElementById("foto_id").setAttribute("src","images/slide_2.jpg");
+			document.getElementById("texto_id").innerHTML = "<p>La electroterapia es una disciplina que se engloba dentro de la fisioterapia y se define como el arte y la ciencia del tratamiento de lesiones y enfermedades por medio de la electricidad.</p><p>Actualmente, la tecnología ha desarrollado numerosos aparatos (productos sanitarios) para la aplicación de la electroterapia sin correr riesgos de efectos secundarios, como los TENS o los estimuladores de alta o baja frecuencia.</p><p>Los principales efectos de las distintas corrientes de electroterapia son:<br>• Anti-inflamatorio.<br>• Analgésico.<br>• Mejora del trofismo.<br>• Potenciación neuro-muscular.<br>• Térmico, en el caso de electroterapia de alta frecuencia.</p><p>Se aplica en procesos dolorosos, inflamatorios músculo-esqueléticos y nerviosos periféricos, así como en atrofias y lesiones musculares y parálisis.</p>";
+		}
+		else if (qs.tecnica=='diatermia'){
+			document.getElementById("titulo_id").innerHTML = "Diatermia";
+			document.getElementById("foto_id").setAttribute("src","images/slide_2.jpg");
+      document.getElementById("texto_id").innerHTML = "<p>El objetivo de la DIATERMIA es provocar en los diversos tejidos un aumento de la temperatura a través del movimiento iónico, de ese modo elevamos su metabolismo, estimulando el proceso de regeneración y facilitando su respuesta frente a las más diversas patologías.</p><p>Tiene efecto analgésico, al elevar la temperatura del nervio se dificulta la señal y el calor generado inhibe las fibras que conducen el dolor dificultando la percepción del mismo.</p><p>También tiene efectos sobre el sistema circulatorio puesto que disminuye el tono de los vasos sanguíneos, aumenta el flujo de sangre y activa la circulación linfática.</p>";
+		}
+		else {
+			document.getElementById("titulo_id").innerHTML = "Error";
+		}
+	</script>	
+
+	  
+	  
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Dónde estamos</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.5820139554435!2d-3.7023552838445903!3d40.48451125943678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422977f2151c4d%3A0xd088ec0f0bd039e2!2sLos%20Arcos%20Fisioterapia!5e0!3m2!1sen!2ses!4v1587828686205!5m2!1sen!2ses"  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+
+          <div class="col-md-3 ml-auto">
+            <h3>Contacto</h3>
+			<p>
+			Teléfono / Fax<br>
+			91 731 35 62<br><br>
+			Correo electrónico<br>
+			contacto@losarcosfisioterapia.com<br><br>
+			Dirección<br>
+			Calle Santiago de Compostela, 24<br>
+			(entrada por calle Narcís Monturiol)<br>
+			28034 Madrid<br><br>
+			</p>
+			<img src="images/logo_colegiofisio.jpg" alt="Image" class="img-fluid">
+			<p>Centro inscrito en el censo de clínicas del Colegio de fisioterapeutas de Madrid<br>
+				Inscrito en la Consejería de Sanidad con num: <h3>CS13285</h3>
+			</p>
+
+
+			  
+			  
+          </div>
+
+          <div class="col-md-4">
+            <h3>Legal</h3>
+            <p><a href="politicaprivacidad.html" target="_blank">Política de Privacidad</a></p>
+			<p><a href="avisolegal.html" target="_blank">Aviso legal</a></p>
+			<p><a href="politicadecookies.html" target="_blank">Política de cookies</a></p>			
+
+          </div>
+
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class=" pt-5">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script> All rights reserved | Template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+  </div>
+  <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+
+
+
+  <script src="js/main.js"></script>
+
+  <script src="js/myCookieConsent.js"></script> 
+
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<?php
+
+
+
+$headers = 'From: <test@test.com>' . "\r\n" .
+'Reply-To: <test@test.com>';
+
+mail('<enriqueperezmedina@gmail.com>', 'the subject', 'the message', $headers,
+  '-fwebmaster@example.com');
+
+?>
