@@ -15,3 +15,4 @@ jobs:
         ftp-username: losarcosfisioterapia.com
         ftp-password: ${{ secrets.FTP_PASSWD}}
         local-dir: ./
+        git-ftp-args: --insecure --remote-root=V3
