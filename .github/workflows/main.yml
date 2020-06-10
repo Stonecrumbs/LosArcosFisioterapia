@@ -12,5 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: ftp://losarcosfisioterapia.com/
-        ftp-username: Deactivated_losarcosfisioterapia.com
-        ftp-password: ${{ secrets.FTP}}
+        ftp-username: losarcosfisioterapia.com
+        ftp-password: ${{ secrets.FTP}
+        local-dir: ./}
