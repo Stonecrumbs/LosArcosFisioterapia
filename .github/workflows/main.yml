@@ -13,5 +13,5 @@ jobs:
       with:
         ftp-server: ftp://losarcosfisioterapia.com/
         ftp-username: losarcosfisioterapia.com
-        ftp-password: ${{ secrets.FTP}
-        local-dir: ./}
+        ftp-password: ${{ secrets.FTP}}
+        local-dir: ./
