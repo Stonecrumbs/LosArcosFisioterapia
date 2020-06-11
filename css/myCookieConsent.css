@@ -19,7 +19,7 @@
     padding: 5px 0 0;
 }
 #myCookieConsent a {
-    color: #48d494;
+    color: #6eb125/*48d494*/;
     display: inline-block;
     padding: 0 10px;
 }
@@ -30,7 +30,7 @@
     display: inline-block;
     color: #000000;
     font-size: 1.1em;
-	background: #48d494;
+	background: #6eb125/*48d494*/;
     text-decoration: none;
     cursor: pointer;
     padding: 2px 20px;
